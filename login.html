@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/e68953718c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <title>Doação</title>
+
+</head>
+
+<body class="img-fundo">
+    <div class="header fonte">
+        <div class="header_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img class="headerLogo" src="imagen/logo 2.png" alt="Logo" width="280" height="60">
+        <div class="header_nav_links">
+            <a href="Home.html">Home</a>
+            <a href="doacao.html">Doação</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div class="header_btn" id="elementId" onclick="window.location.href='cadastre-se.html';">
+            <span>Cadastre-se</span>
+        </div>
+        <div class="lista_btn">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <i class="fa-brands fa-square-instagram icon"></i>
+            <i class="fa-brands fa-square-facebook icon"></i>
+            <i class="fa-brands fa-square-whatsapp icon"></i>
+            <i class="fa-solid fa-envelope icon"></i>
+        </div>
+    </div>
+    <!-- pagina para baixo -->
+    <div></div>
+    <div class="main_page font">
+        <h1 class="main_page_Login">
+            Login
+        </h1>
+        <div class="Group-login fonte user-input ">
+            <label>Usuário</label>
+            <input type="text" id="numerocartao" />
+        </div>
+        <div class="Group-login1 fonte user-input">
+            <label>Senha</label>
+            <input type="text" id="numerocartao" />
+        </div>
+        <div>
+            <h2 class="entrecom ">Entre com</h2 class="">
+        </div>
+        <a class="entrar" onclick="window.location" href="doacao.html"><span> Entrar</span></a>
+        <a class="google" onclick="window.location" href="https://accounts.google.com/v3/signin/identifier?hl=pt-BR&ifkv=AcMMx-ft0J7d1QGfTeS_jZ2BuXBWAFfC06Usq9qVyJv05SiqvAZZyr9Lim7Ok6ipTyGlYqMpPhhcTA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1664245644%3A1732234487393597&ddm=1" id="elementId"><span> Google</span></a>
+        <a class="facebook" onclick="window.location" href="https://web.facebook.com/?locale=pt_BR&_rdc=1&_rdr" id="elementId"><span>
+                Facebook</span></a>
+
+        <script>
+            // Adicione aqui as funcionalidades interativas (se necessário).
+            document.querySelector('.finish-btn').addEventListener('click', () => {
+                alert('Doação finalizada com sucesso!');
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const element = document.getElementById('elementId');
+                if (element) {
+                    element.addEventListener('click', () => {
+                        console.log('Botão clicado!');
+                    });
+                }
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body {
+    background: #d2d2c1 url('imagens/fundo.png');
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.texto-gradiente {
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: auto;
+    font-size: 25px;
+}
+
+.centralizar {
+    max-width: auto;
+   /* height: 10%; */
+    display: block;
+     margin-left: auto;
+    margin-right: auto; 
+    width: 80%;
+}
+
+.bordas {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: auto;
+    border-top: 0px  #CA6B41 solid; /* Borda superior */
+    border-bottom: 0px  #CA6B41 solid; /* Borda inferior */
+    border-left:50px  #CA6B41 solid;
+    border-right: 50px  #CA6B41 solid;
+   
+}
+
+.borda1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: auto;
+    border-top: 50px  #CA6B41 solid; /* Borda superior */
+    border-bottom: 0px  #CA6B41 solid; /* Borda inferior */
+    border-left:50px  #CA6B41 solid;
+    border-right: 50px  #CA6B41 solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  
+
+}
+
+.conteudo {
+    border: 50px #CA6B41 solid;
+    padding: 300px;
+    margin: auto;
+    width: 5px;
+}
+
+tr {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.esqueda {
+    width: 95%;
+}
+
+.arredonda {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.imagens{
+    height: 500px ;
+    left: 0px;
+    width: 1300px ;
+}

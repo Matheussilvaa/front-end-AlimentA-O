@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/e68953718c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <title>Cadastre-se</title>
+
+</head>
+
+<body>
+    <form action="enviar">
+        <div class="header fonte">
+            <div class="header_menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img class="headerLogo" src="imagen/logo 2.png" />
+            <div class="header_nav_links">
+                <a href="Home.html">Home</a>
+                <a href="doacao.html">Doação</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="header_btn" id="elementId" onclick="window.location.href='cadastre-se.html';">
+                <span>Cadastre-se</span>
+            </div>
+            <div class="lista_btn">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+        <div class="tela-doacao fonte ">
+            <div class="laranja-cadastro ">
+                <div class="ulario-cadastro">
+                    <div class="ulTit-cadastro ">
+                        <h2>Informe seus Dados para cadastro</h2>
+                    </div>
+                    <div class="check-permission fonte">
+                        <div class="position fonte">
+                            <div class="user-input fonte">
+                                <label>Nome Completo</label>
+                                <input type="text" id="nomecompleto" />
+                            </div>
+                            <div class="user-input fonte">
+                                <label>CPF</label>
+                                <input type="text" id="CPF" />
+                            </div>
+                            <div class="user-input fonte">
+                                <label>Data De Nascimento </label>
+                                <input type="date" id="complmento" />
+                            </div>
+                            <div class="user-input">
+                                <label>Sexo*</label>
+                                <select id="sexo">
+                                    <option value="">SELECIONE</option>
+                                    <option value="M">MASCULINO</option>
+                                    <option value="F">FEMININO</option>
+                                    <option value="N">PREFIRO NÃO INFORMAR</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <div class="user-input">
+                                    <label>E-mail</label>
+                                    <input type="email" id="email" />
+                                </div>
+                                <div class="user-input">
+                                    <label>Telefone</label>
+                                    <input type="tel" id="telefone" />
+                                </div>
+                                <div class="user-input fonte">
+                                    <label>Endereço </label>
+                                    <input type="text" id="endereco" />
+                                </div>
+                                <div class="user-input fonte">
+                                    <label>Complemento</label>
+                                    <input type="text" id="Complemento" />
+                                </div>
+                                <div class="user-input fonte">
+                                    <label>Bairro</label>
+                                    <input type="text" id="Complemento" />
+                                </div>
+                                <div class="user-input fonte">
+                                    <label>Cidade</label>
+                                    <input type="text" id="Cidade" />
+                                </div>
+                                <div class="user-input fonte">
+                                    <label for="estado">Estado</label>
+                                    <select id="sexo" name="estado">
+                                        <option value="">Selecione um estado</option>
+                                        <option value="AC">Acre (AC)</option>
+                                        <option value="AL">Alagoas (AL)</option>
+                                        <option value="AP">Amapá (AP)</option>
+                                        <option value="AM">Amazonas (AM)</option>
+                                        <option value="BA">Bahia (BA)</option>
+                                        <option value="CE">Ceará (CE)</option>
+                                        <option value="DF">Distrito Federal (DF)</option>
+                                        <option value="ES">Espírito Santo (ES)</option>
+                                        <option value="GO">Goiás (GO)</option>
+                                        <option value="MA">Maranhão (MA)</option>
+                                        <option value="MT">Mato Grosso (MT)</option>
+                                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                                        <option value="MG">Minas Gerais (MG)</option>
+                                        <option value="PA">Pará (PA)</option>
+                                        <option value="PB">Paraíba (PB)</option>
+                                        <option value="PR">Paraná (PR)</option>
+                                        <option value="PE">Pernambuco (PE)</option>
+                                        <option value="PI">Piauí (PI)</option>
+                                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                                        <option value="RN">Rio Grande do Norte (RN)</option>
+                                        <option value="RS">Rio Grande do Sul (RS)</option>
+                                        <option value="RO">Rondônia (RO)</option>
+                                        <option value="RR">Roraima (RR)</option>
+                                        <option value="SC">Santa Catarina (SC)</option>
+                                        <option value="SP">São Paulo (SP)</option>
+                                        <option value="SE">Sergipe (SE)</option>
+                                        <option value="TO">Tocantins (TO)</option>
+                                    </select>
+                                </div>
+                                <div class="positiondoacao">
+                                    <h2>Para doações recorrentes com cartão de crédito</h2>
+                                </div>
+
+                                <div class="user-input position1">
+                                    <label>Nome no cartão</label>
+                                    <input type="text" id="nomecartao" />
+                                </div>
+                                <div class="user-input position2">
+                                    <label>Número do cartão</label>
+                                    <input type="text" id="numerocartao" />
+                                </div>
+                                <div class="user-input position3">
+                                    <label>ccv</label>
+                                    <input type="text" id="ccv" />
+                                </div>
+                                <div class="user-input position4">
+                                    <label>Validade </label>
+                                    <input type="text" id="complmento" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="check-permission fonte privacidade">
+                            <input type="checkbox" id="permissionData" name="permissionDataValue" />
+                            <label for="permission" class="permission-label">Li e aceito as Politíticas de
+                                privacidade*(?)</label>
+                        </div>-->
+                    <div class="finalizar-cadastro fonte">
+                        <button type="submit" class="finish-btn header_btn">
+                            Finalizar cadastro
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.getElementById('elementId');
+            if (element) {
+                element.addEventListener('click', () => {
+                    console.log('Botão clicado!');
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

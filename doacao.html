@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/e68953718c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+  <title>Doação</title>
+</head>
+
+<body>
+  <form action="enviar">
+    <div class="header fonte">
+      <div class="header_menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <img class="headerLogo" src="imagen/logo 2.png" />
+      <div class="header_nav_links">
+        <a href="Home.html">Home</a>
+        <a href="doacao.html">Doação</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div>
+        <div class="header_btn" id="elementId" onclick="window.location.href='cadastre-se.html';">
+            <span>Cadastre-se</span>
+        </div>
+    </div>
+      <div class="lista_btn">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+    <div class="tela-doacao fonte">
+      <div class="laranja-doacao">
+        <h1>ESCOLHA COMO DOAR:</h1>
+        <div class="ulario">
+          <div class="ulTit">
+            <h2>doações flexíveis e de acordo com o seu bolso</h2>
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <div class="toggle">
+            <div class="toggle-container">
+              <input type="radio" id="mensal" name="toggle" checked />
+              <label for="mensal" class="toggle-label">MENSAL</label>
+              <input type="radio" id="unica" name="toggle" />
+              <label for="unica" class="toggle-label">ÚNICA</label>
+              <div class="toggle-slider"></div>
+            </div>
+          </div>
+          <div class="toggle-value-container">
+            <div class="toggle-value-btn">
+              <input type="radio" id="30" name="toggleValue" checked />
+              <label for="30" class="toggle-label-value">R$ 30,00</label>
+            </div>
+            <div class="toggle-value-btn">
+              <input type="radio" id="55" name="toggleValue" />
+              <label for="55" class="toggle-label-value">R$ 55,00</label>
+            </div>
+            <div class="toggle-value-btn">
+              <input type="radio" id="100" name="toggleValue" />
+              <label for="100" class="toggle-label-value">R$ 100,00</label>
+            </div>
+            <div class="toggle-value-btn">
+              <input type="radio" id="outroValor" name="toggleValue" />
+              <label for="outroValor" class="toggle-label-value">OUTRO VALOR</label>
+            </div>
+          </div>
+
+          <div>
+            <h2>Métodos de Doação </h2><br>
+            <select id="border" class="metodosdedoacao">
+              <option value="">SELECIONE</option>
+              <option value="CC">CARTÃO DE CRÉDITO</option>
+              <option value="PIX">PIX</option>
+            </select>
+          </div>
+          <div class="pagamentopix ">
+            <h2>Para pagamento pix</h2>
+            <br>
+            <div class=""><img src="imagen/QR-code.png" alt="" width="center"></div>
+
+          </div>
+          <div class="check-permission fonte">
+
+            <div class="pagamentocartao fonte">
+              <h2>Para doação no cartão de crédito:</h2><br><br><br>
+              <form action="/enviar" method="POST">
+                <div class="user-input fonte">
+                  <label for="nomecartao">Nome no cartão</label>
+                  <input type="text" id="nomecartao" name="nomecartao" required />
+                </div>
+                <div class="user-input fonte">
+                  <label for="numerocartao">Número do cartão</label>
+                  <input type="text" id="numerocartao" name="numerocartao" required />
+                </div>
+                <div class="user-input fonte">
+                  <label for="ccv">CCV</label>
+                  <input type="text" id="ccv" name="ccv" required />
+                </div>
+                <div class="user-input fonte">
+                  <label for="validade">Validade</label>
+                  <input type="text" id="validade" name="validade" required />
+                </div>
+                <div class="check-permission fonte privacidade">
+                  <input type="checkbox" id="permissionData" name="permissionDataValue" required />
+                  <label for="permissionData" class="permission-label">Li e aceito as Políticas de privacidade, informações Fiscais 
+                    Política de Cookies 
+                    Termos de Serviço*</label>
+                </div>
+                <button type="submit" class="finish-btn header_btn">
+                  FINALIZAR DOAÇÃO
+                </button>
+              </form>
+              
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>

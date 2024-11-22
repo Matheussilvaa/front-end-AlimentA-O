@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/e68953718c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <title>Home</title>
+
+</head>
+
+<body class="img-fundo">
+    <div class="header fonte">
+        <div class="header_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img class="headerLogo" src="imagen/logo 2.png" alt="Logo" width="280" height="60">
+        <div class="header_nav_links">
+            <a href="Home.html">Home</a>
+            <a href="doacao.html">Doação</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div>
+            <div class="header_btn" id="elementId" onclick="window.location.href='cadastre-se.html';">
+                <span>Cadastre-se</span>
+            </div>
+        </div>
+        <div class="lista_btn">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <i class="fa-brands fa-square-instagram icon"></i>
+            <i class="fa-brands fa-square-facebook icon"></i>
+            <i class="fa-brands fa-square-whatsapp icon"></i>
+            <i class="fa-solid fa-envelope icon"></i>
+        </div>
+    </div>
+    <div></div>
+    <div class="main_page font">
+        <h1 class="main_page_title">
+            Contribuir com uma doação é plantar a semente da esperança na vida de alguém, cultivando um futuro melhor
+            para todos.
+        </h1>
+        <div class="main_page_items font">
+            <div class="main_page_box">
+                <h2 class="main_page_box_title text-color">NOSSO OBJETIVO</h2>
+                <p class="main_page_box_description">
+                    Nossa missão é reduzir o desperdício, a má distribuição de alimentos e contribuir para a diminuição
+                    de gases de efeito estufa no planeta.
+                </p>
+            </div>
+            <div class="main_page_box font">
+                <h2 class="main_page_box_title text-color">O QUE FAZEMOS</h2>
+                <p class="main_page_box_description">
+                    Através da plataforma Alimentação, nós e empresas parceiras doamos e encaminhamos alimentos que
+                    perderam valor comercial e assim gerar um grande impacto social e ambiental.
+                </p>
+            </div>
+            <div class="main_page_box font">
+                <h2 class="main_page_box_title text-color">COMO VOCÊ PODE PARTICIPAR</h2>
+                <p class="main_page_box_description">
+                    <strong>Cadastre-se </strong> e escolha o melhor plano e
+                    comece a nos ajudar a fazer o encaminhamento
+                    correto dos alimentos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Adicione aqui as funcionalidades interativas (se necessário).
+        document.querySelector('.finish-btn').addEventListener('click', () => {
+            alert('Doação finalizada com sucesso!');
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Criar o elemento
+            const novoBotao = document.createElement('button');
+            novoBotao.id = 'meuBotao';
+            novoBotao.textContent = 'Clique aqui';
+
+            // Adicionar o elemento ao DOM
+            document.body.appendChild(novoBotao);
+
+            // Adicionar evento ao botão
+            novoBotao.addEventListener('click', () => {
+                console.log('Botão foi clicado!');
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
